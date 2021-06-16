@@ -100,7 +100,7 @@ body{
     color: var(--color-type-n);
     background-color: var(--color-page);
     padding: 20% 0% 5% 0% ;
-    
+    margin-top: 3%;
 }
 .lets p{
     font-size: 20px;
