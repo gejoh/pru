@@ -1,0 +1,115 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: monospace;
+}
+:root{
+--color-page:rgb(43, 43, 43);
+--color-cards:rgb(170, 170, 170);
+--color-type-n:rgb(212, 212, 212);
+--color-type-p:rgb(235, 235, 235);
+--color-button: rgb(54, 49, 49);
+}
+/* Barra del menu superior*/
+
+body{    
+    display: grid;    
+    grid-template-columns: auto;
+}
+.menu img{    
+    margin-top: 3%;
+    width: 250px;    
+}
+.menu .boton{
+    display: grid;
+    grid-template-columns:  auto auto auto auto auto;
+    color: rgb(235, 235, 235);
+    background-color: var(--color-page);
+    text-align: center;
+    list-style: none;    
+}
+.menu li{
+    padding: 20px;    
+    text-align: center;
+    list-style: none;
+}
+            /*Bloque slider*/
+
+
+            /*section*/
+.section1{  
+    grid-template-columns:  auto;
+    padding: 15px 0px 15px 0px ; 
+    text-align: center;
+    font-size: 30px;
+    color: var(--color-type-p);
+    background-color:  var(--color-page);
+}
+.section2{
+    margin: 2% 3% 2% 3%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.section2 img{
+    width: 100%;
+    border-radius: 2px;
+}
+.text-section{
+    margin-left: 3%;
+    border-radius: 2px;
+    background-color: var(--color-cards);
+    justify-content: center;
+    text-align: center;
+}
+                /*cases*/
+.cases{
+    grid-template-columns:  auto;
+    padding: 15px 0px 15px 0px ; 
+    text-align: center;
+    font-size: 30px;
+}
+.blocks{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.blocks div{
+    padding: 35px;
+    margin: 2% 2% 2% 2%;
+    background-color: var(--color-cards);
+}
+.blocks img{
+    margin-top: -7%;
+    margin-left: -5%;
+    width: 110%;
+}
+.blocks h2{
+    font-size: 50px;
+}
+.blocks p{
+    font-size: 20px;
+    margin-bottom: 18%;
+}
+.blocks #buton{
+    font-size: 100%;
+    color:var(--color-type-p);
+    background-color: var(--color-button);
+    padding: 1% 35% 1% 35%;
+    
+}
+.lets{
+    color: var(--color-type-n);
+    background-color: var(--color-page);
+    padding: 20% 0% 5% 0% ;
+    
+}
+.lets p{
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+.lets #buton{
+    font-size: 100%;
+    color:var(--color-type-p);
+    background-color: var(--color-button);
+    padding: 1% 15% 1% 15%;
+    margin-top: 5%;
+}
