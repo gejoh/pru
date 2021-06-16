@@ -76,6 +76,7 @@ body{
     padding: 35px;
     margin: 2% 2% 2% 2%;
     background-color: var(--color-cards);
+    box-shadow: rgb(170, 170, 170);
 }
 .blocks img{
     margin-top: -7%;
@@ -97,6 +98,9 @@ body{
     
 }
 .lets{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 30%;
     color: var(--color-type-n);
     background-color: var(--color-page);
     padding: 20% 0% 5% 0% ;
