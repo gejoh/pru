@@ -145,7 +145,7 @@ body{
     justify-content: start;
     text-align: start;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 800px){
     
     .section2 {
         display: grid;
