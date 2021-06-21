@@ -53,13 +53,28 @@ body{
 .section2 img{
     width: 100%;
     border-radius: 2px;
+    border: black solid;
 }
 .text-section{
+    padding: 5%;
     margin-left: 3%;
     border-radius: 2px;
     background-color: var(--color-cards);
-    justify-content: center;
-    text-align: center;
+}
+.text-section h1{
+    margin: 0;
+    font-size: 600%;
+    text-align: right;
+}
+.text-section h2{
+    margin: 0;
+    font-size: 350%;
+    text-align: right;
+}
+.text-section p{
+    margin-top: 8%;
+    font-size: 150%;
+    text-align: left;    
 }
                 /*cases*/
 .cases{
@@ -116,4 +131,28 @@ body{
     background-color: var(--color-button);
     padding: 1% 15% 1% 15%;
     margin-top: 5%;
+}
+.social-m{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: space-between;
+    padding-bottom: 2%;
+    color: var(--color-type-n);
+    background-color: var(--color-page);
+    font-size: 50%;
+}
+.text-p{
+    justify-content: start;
+    text-align: start;
+}
+@media only screen and (max-width: 768px){
+    
+    .section2 {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .blocks{
+        display: grid;
+        grid-template-columns: auto;
+    }
 }
