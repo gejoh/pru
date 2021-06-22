@@ -152,15 +152,13 @@ body{
     .section2 {
         display: grid;
         grid-template-columns: auto;
-        text-align: center;
-        justify-content: center;
     }
     .section2 img{
         width: 100%;
     }
     .text-section{
-    padding: 5%;
     margin-top: 3%;
+    margin-left: 0;
 }
 .text-section h1{
     margin: 0;
