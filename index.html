@@ -1,96 +1,187 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>title</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="header">
-        <nav class="menu">
-            <ul class="boton">
-                <div><a href="#"><img src="logo.png" alt="puto el que lea"></a></div>
-                <li>section1</li>
-                <li>section2</li>
-                <li>section3</li>
-                <li>section4</li>
-            </ul>
-        </nav>
-    </div>
-    <div class="slider">
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: monospace;
+}
+:root{
+--color-page:rgb(43, 43, 43);
+--color-cards:rgb(170, 170, 170);
+--color-type-n:rgb(212, 212, 212);
+--color-type-p:rgb(235, 235, 235);
+--color-button: rgb(54, 49, 49);
+}
+/* Barra del menu superior*/
 
-    </div>
-    <div class="section1">
-        <h1>Section</h1>
-        <p>Lorem ipsum dolor sit amet</p>
-    </div>
-    <div class="section2">
-        <div class="image-case"><img src="spiderblack-Sheet.png" alt="Imagen de exposición bonita."></div>
-        <div class="text-section">
-            <h1>Title</h1>
-            <h2>Lorem ipsum</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sapiente eius iste commodi culpa, quo obcaecati sit perferendis necessitatibus animi tenetur fugiat consectetur in et nam aperiam distinctio omnis quisquam!</p>
-        </div>
-    </div>
-    <div class="cases">
-        <div><h1>Cases</h1>
-    </div>
-    <div class="blocks">
-        <div>
-            <a href="#"><img src="spiderblack-Sheet.png" alt="imagen de muestra"></a>
-            <h2>title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, perferendis?</p>
-            <a href="#" id="buton">action</a>
-        </div>
-        <div>
-            <a href="#"><img src="spiderblack-Sheet.png" alt="imagen de muestra"></a>
-            <h2>title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, perferendis?</p>
-            <a href="#" id="buton">action</a>
-        </div>
-        <div>
-            <a href="#"><img src="spiderblack-Sheet.png" alt="imagen de muestra"></a>
-            <h2>title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, perferendis?</p>
-            <a href="#" id="buton">action</a>
-        </div>
-        <div>
-            <a href="#"><img src="spiderblack-Sheet.png" alt="imagen de muestra"></a>
-            <h2>title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, perferendis?</p>
-        <a href="#" id="buton">action</a>
-        </div>
-        <div>
-            <a href="#"><img src="spiderblack-Sheet.png" alt="imagen de muestra"></a>
-            <h2>title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, perferendis?</p>
-            <a href="#" id="buton">action</a>
-        </div>
-        <div>
-            <a href="#"><img src="spiderblack-Sheet.png" alt="imagen de muestra"></a>
-            <h2>title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, perferendis?</p>
-            <a href="#" id="buton">action</a>
-        </div>
-    </div>
-    <div class="action">
+body{    
+    display: grid;    
+    grid-template-columns: auto;
+}
+.menu img{    
+    margin-top: 3%;
+    width: 250px;    
+}
+.menu .boton{
+    display: grid;
+    grid-template-columns:  auto auto auto auto auto;
+    color: rgb(235, 235, 235);
+    background-color: var(--color-page);
+    text-align: center;
+    list-style: none;    
+}
+.menu li{
+    padding: 20px;    
+    text-align: center;
+    list-style: none;
+}
+            /*Bloque slider*/
 
-    </div>
-    <div>
-        <footer>
-            <div class="lets">
-                <h1>let's go!</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, perferendis?</p>
-                <a href="#" id="buton">action</a>
-            </div>
-            <div class="social-m">
-                <div id="text-p">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </div>
-        </footer>
-    </div>
-</body>
-</html>
+
+            /*section*/
+.section1{  
+    grid-template-columns:  auto;
+    padding: 15px 0px 15px 0px ; 
+    text-align: center;
+    font-size: 30px;
+    color: var(--color-type-p);
+    background-color:  var(--color-page);
+}
+.section2{
+    margin: 2% 3% 2% 3%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.section2 img{
+    width: 100%;
+    border-radius: 2px;
+    border: black solid;
+}
+.text-section{
+    padding: 5%;
+    margin-left: 3%;
+    border-radius: 2px;
+    background-color: var(--color-cards);
+}
+.text-section h1{
+    margin: 0;
+    font-size: 600%;
+    text-align: right;
+}
+.text-section h2{
+    margin: 0;
+    font-size: 350%;
+    text-align: right;
+}
+.text-section p{
+    margin-top: 8%;
+    font-size: 150%;
+    text-align: left;    
+}
+                /*cases*/
+.cases{
+    grid-template-columns:  auto;
+    padding: 15px 0px 15px 0px ; 
+    text-align: center;
+    font-size: 30px;
+}
+.blocks{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.blocks div{
+    padding: 35px;
+    margin: 2% 2% 2% 2%;
+    background-color: var(--color-cards);
+    box-shadow: rgb(170, 170, 170);
+}
+.blocks img{
+    margin-top: -7%;
+    margin-left: -5%;
+    width: 110%;
+}
+.blocks h2{
+    font-size: 50px;
+}
+.blocks p{
+    font-size: 20px;
+    margin-bottom: 18%;
+}
+.blocks #buton{
+    font-size: 100%;
+    color:var(--color-type-p);
+    background-color: var(--color-button);
+    padding: 1% 35% 1% 35%;
+    
+}
+.lets{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 30%;
+    color: var(--color-type-n);
+    background-color: var(--color-page);
+    padding: 20% 0% 5% 0% ;
+    margin-top: 3%;
+}
+.lets p{
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+.lets #buton{
+    font-size: 100%;
+    color:var(--color-type-p);
+    background-color: var(--color-button);
+    padding: 1% 15% 1% 15%;
+    margin-top: 5%;
+}
+.social-m{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: space-between;
+    padding-bottom: 2%;
+    color: var(--color-type-n);
+    background-color: var(--color-page);
+    font-size: 50%;
+}
+.text-p{
+    justify-content: start;
+    text-align: start;
+}
+@media only screen and (max-width: 700px){
+    .menu .boton{
+        display: grid;
+        grid-template-columns:  auto auto;
+
+    }
+    .section2 {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .section2 img{
+        width: 80%;
+        border-radius: 2px;
+        border: black solid;
+    }
+    .cases{
+        grid-template-columns:  auto;
+        padding: 15px 0px 15px 0px ; 
+        font-size: 100%;
+    }
+    .blocks{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .lets{
+        justify-content: center;
+        grid-template-columns: auto;
+        padding: 20% 0% 5% 0% ;
+        margin-top: 3%;
+    }
+    .lets p{
+        font-size: 20px;
+        margin-bottom: 5%;
+    }
+    .lets #buton{
+        font-size: 100%;
+        padding: 1% 5% 1% 5%;
+        margin-top: 5%;
+    }
+}
