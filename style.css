@@ -52,8 +52,6 @@ body{
 }
 .section2 img{
     width: 100%;
-    border-radius: 2px;
-    border: black solid;
 }
 .text-section{
     padding: 5%;
@@ -154,12 +152,26 @@ body{
     .section2 {
         display: grid;
         grid-template-columns: auto;
+        text-align: center;
+        justify-content: center;
     }
     .section2 img{
-        width: 80%;
-        border-radius: 2px;
-        border: black solid;
+        width: 100%;
     }
+    .text-section{
+    padding: 5%;
+    margin-top: 3%;
+}
+.text-section h1{
+    margin: 0;
+    text-align: center;
+}
+.text-section h2{
+    text-align: center;
+}
+.text-section p{
+    text-align: center;    
+}
     .cases{
         grid-template-columns:  auto;
         padding: 15px 0px 15px 0px ; 
@@ -172,7 +184,8 @@ body{
     .lets{
         justify-content: center;
         grid-template-columns: auto;
-        
+        padding: 20% 0% 5% 0% ;
+        margin-top: 5%;
     }
     .lets p{
         font-size: 20px;
@@ -182,5 +195,18 @@ body{
         font-size: 100%;
         padding: 1% 5% 1% 5%;
         margin-top: 5%;
+    }
+    .social-m{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-between;
+        padding-bottom: 2%;
+        color: var(--color-type-n);
+        background-color: var(--color-page);
+        font-size: 50%;
+    }
+    .text-p{
+        justify-content: start;
+        text-align: start;
     }
 }
