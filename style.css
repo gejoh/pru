@@ -145,14 +145,43 @@ body{
     justify-content: start;
     text-align: start;
 }
-@media only screen and (max-width: 900px){
-    
+@media only screen and (max-width: 700px){
+    .menu .boton{
+        display: grid;
+        grid-template-columns:  auto auto;
+
+    }
     .section2 {
         display: grid;
         grid-template-columns: auto;
     }
+    .section2 img{
+        width: 80%;
+        border-radius: 2px;
+        border: black solid;
+    }
+    .cases{
+        grid-template-columns:  auto;
+        padding: 15px 0px 15px 0px ; 
+        font-size: 100%;
+    }
     .blocks{
         display: grid;
         grid-template-columns: auto;
+    }
+    .lets{
+        justify-content: center;
+        grid-template-columns: auto;
+        padding: 20% 0% 5% 0% ;
+        margin-top: 3%;
+    }
+    .lets p{
+        font-size: 20px;
+        margin-bottom: 5%;
+    }
+    .lets #buton{
+        font-size: 100%;
+        padding: 1% 5% 1% 5%;
+        margin-top: 5%;
     }
 }
